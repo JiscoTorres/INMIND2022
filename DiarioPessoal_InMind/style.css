@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+:root{
+    --background: #e4e2e2;
+    --foreground: #f1f3f5;
+    --white: #fff;
+    --black: #000;
+    --gray: #6e6e6e;
+    --shadow: #76767663;
+    --border: #cfcfcf;
+    --color-primary-hue: 252;
+    --color-gray: hsl(var(--color-primary-hue), 15%, 65%);
+}
+
+.mini-headign{
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: -90px;
+    font-size: 40px;
+    color: #7d92b1;
+}
+
+.mini-headig{
+    margin-top: -10px;
+    margin-left: 40px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.37);
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+}
+.header-container{
+    width: 95%;
+    background: var(--white);
+    height: 100px;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px 0 var(--shadow);
+}
+.header-wrapper{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding: 0 8px;
+    justify-content: space-between;
+}
+.logoBox{
+    width: 7%;
+}
+.logoBox img{
+    width: 60px;
+}
+.searchBox{
+    width: 38%;
+    position: relative;
+}
+.iconBox1{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    border-right: 2px solid var(--border);
+}
+.iconBox2{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    position: relative;
+}
+.searchBox input{
+    padding: 15px 45px 15px 15px;
+    border-radius: 50px;
+    width: 100%;
+    background: var(--foreground);
+    border: none;
+    box-shadow: 0 2px 5px 0 var(--shadow);
+    color: var(--black);
+}
+.searchBox i{
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    color: var(--black);
+    cursor: pointer;
+    transition: .4s;
+}
+.searchBox i:hover{
+    color: #F99E57;
+}
+
+.iconBox1 i,
+.iconBox2 i{
+    font-size: 20px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px;
+    color: #7d92b1;
+    transition: .4s;
+}
+.iconBox1 i:hover,
+.iconBox2 i:hover{
+    background: #525f74;
+    color: #d1deec;
+    cursor: pointer;
+}
+.iconBox2 label{
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.iconBox2 label img{
+    width: 100%;
+}
+.iconBox2 .fa-caret-down{
+    position: absolute;
+    right: 0;
+    font-size: 16px;
+    top: 7px;
+}
+.iconBox2 .fa-caret-down:hover{
+    background: transparent;
+}
+
+body{
+    background: var(--background);
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0  15px 50px rgba(0, 0, 0, 0.781);
+    filter: blur(4px);
+    background: #d1ebff;
+    border-radius: 10px;
+}
+
+.swiper-slide-active{
+    filter: blur(0px);
+    background: #fff;
+}
+
+.testimonialBox{
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-top: 90px;
+    color: rgb(83, 82, 82);  /*Cor textos páginas diário pessoal*/
+}
+
+.testimonialBox img{
+    width: 60px;
+}
+
+.testimonialBox .quote{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    opacity: 0.2;
+}
+
+.testimonialBox .details{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.testimonialBox .details .imgBx{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #666;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.testimonialBox .details .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonialBox .details h3{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #2196f3;
+    line-height: 1.1em;
+}
+
+.testimonialBox .details h3 span{
+     font-size: 12px;
+     color: rgb(83, 82, 82);  /*Cor data*/
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right{
+    background-image: none;
+}
+.footer{
+	text-align: center;
+	color:#9a9a9a;
+	padding:10px 0 20px;
+	font-size: 13px;
+}

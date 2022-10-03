@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="LOGO_Inmind.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>InMind.com</title>
+
+</head>
+<header>
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="logoBox">
+                <img src="./images/LOGO_InMind.png" alt="logo">
+            </div>
+            <div class="searchBox">
+                <input type="search">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="iconBox1">
+                <a href="file:///C:/Users/torre/Downloads/InMind_Projete/SiteInMind/TelaInicial_InMind/index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="file:///C:/Users/torre/Downloads/InMind_Projete/SiteInMind/Portfolio_Profissional/Portfolio-Website/index.html"><i class="fa-solid fa-user-group"></i></a>
+                <a href="file:///C:/Users/torre/Downloads/InMind_Projete/SiteInMind/video-chat-app-master/index.html"><i class="fa-solid fa-video"></i></a>
+
+            </div>
+            <div class="iconBox2">
+                <a href="file:///C:/Users/torre/Downloads/InMind_Projete/SiteInMind/interface-twitter-main/index.html"><i class="fa-solid fa-circle-plus"></i> </a>
+                <a href="file:///C:/Users/torre/Downloads/InMind_Projete/SiteInMind/Chat_InMind/index.html"><i class="fa-brands fa-facebook-messenger"></i></a>
+                <i class="fa-solid fa-bell"></i>
+                <label><img src="Design sem nome (13).png" alt="user"></label>
+                <i class="fa-solid fa-caret-down"></i>
+            </div>
+        </div>
+    </div>
+</header>
+
+<a href=""><h3 class="mini-headig" title="Tela inicial InMind">🠔 VOLTAR</h3></a>
+
+<body>
+    <h3 class="mini-headign">DIÁRIO PESSOAL</h3>
+    <section>
+    <!-- Swiper // Inicialização do bloco de notas-->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="width: 320px;">
+                    <div class="testimonialBox">
+                        <img src="right-quote.png" class="quote" alt="">
+                        <div class="content">
+                            <p>Hoje foi minha primeira sessão com a Dra. DeLaylla. Sinto que já estou um pouco melhor, precisava conversar e desabafar isto com alguém. Após isso, fui ao trabalho e chegando lá fui chamado ao RH que me avisaram da minha suposta promoção que viria. Ainda não sei o que pensar a respeito! Vou saber a resposta depois de amanhã.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="Design sem nome (13).png" alt="">
+                                </div>
+                                <h3>Igor Vinícius<br><span>04/10/2022</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="width: 320px;" >
+                    <div class="testimonialBox">
+                        <img src="right-quote.png" class="quote" alt="">
+                        <div class="content">
+                            <p>Durante o dia de hoje, fiz meus afazeres e fui ao trabalho. Porém, senti que oscilei de humor em alguns momentos e estava muito ansioso com algo que não sabia exatamente o que era. Talvez seja a minha nova promoção na empresa que me deixa um pouco apreensivo.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="Design sem nome (13).png" alt="">
+                                </div>
+                                <h3>Igor Vinícius<br><span>05/10/2022</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide" style="width: 320px;">
+                    <div class="testimonialBox">
+                        <img src="right-quote.png" class="quote" alt="">
+                        <div class="content">
+                            <p>Hoje fiquei sabendo o real resultado da minha promoção... Fui promovido! Estou mais feliz do que achei que ficaria, sinto que antes não saberia lidar com este fato. Estou ansioso para contar á Dra. DeLaylla o que aconteceu. Estou conseguindo aplicar todos os métodos que aprendi na sessão de anteontem.</p>
+                            <div class="details">
+                                <div class="imgBx">
+                                    <img src="Design sem nome (13).png" alt="">
+                                </div>
+                                <h3>Igor Vinícius<br><span>06/10/2022</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+    </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Initialize Swiper // Rolagem Swiper-->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        loop: true,
+        });
+    </script>
+
+    <div class="footer">
+        <p>© 2022 InMind™ Todos os Direitos Reservados</p>
+    </div>
+</body>
+</html>
